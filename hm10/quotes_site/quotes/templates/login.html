@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
 </head>
 <body>
-<h2>Скидання паролю</h2>
+<h1>Login</h1>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Відправити</button>
+    <button type="submit">Login</button>
 </form>
+<a href="{% url 'register' %}">Register</a>
+
 </body>
 </html>
